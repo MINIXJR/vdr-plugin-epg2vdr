@@ -1,0 +1,1426 @@
+vdr-plugin-epg2vdr (1.2.17+git20251201-2-c64172a-0yavdr0~noble) noble; urgency=medium
+
+  * new upstream snapshot
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 03 Dec 2025 23:06:37 +0100
+
+vdr-plugin-epg2vdr (1.2.17-0yavdr4~noble) noble; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 25 Jul 2025 00:27:58 +0200
+
+vdr-plugin-epg2vdr (1.2.17-0yavdr3~noble) noble; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 21 Jun 2025 19:27:28 +0200
+
+vdr-plugin-epg2vdr (1.2.17-0yavdr2~noble) noble; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 17 Apr 2025 22:36:38 +0200
+
+vdr-plugin-epg2vdr (1.2.17-0yavdr1~noble) noble; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 26 Feb 2025 16:16:21 +0100
+
+vdr-plugin-epg2vdr (1.2.17-0yavdr0~noble) noble; urgency=medium
+
+  * new upstream version 
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 14 Feb 2025 21:56:50 +0100
+
+vdr-plugin-epg2vdr (1.2.16-1yavdr5~noble) noble; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 01 Nov 2024 19:42:15 +0100
+
+vdr-plugin-epg2vdr (1.2.16-1yavdr4~jammy) jammy; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 31 Oct 2024 08:31:59 +0100
+
+vdr-plugin-epg2vdr (1.2.16-1yavdr3~noble) noble; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 12 Oct 2024 22:05:15 +0200
+
+vdr-plugin-epg2vdr (1.2.16-1yavdr2~noble) noble; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 06 Oct 2024 20:35:23 +0200
+
+vdr-plugin-epg2vdr (1.2.16-1yavdr1~noble) noble; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 27 Sep 2024 17:36:00 +0200
+
+vdr-plugin-epg2vdr (1.2.16-1yavdr0~noble) noble; urgency=medium
+
+  * add patch for VDR 2.7.1 compatibility 
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 14 Sep 2024 23:06:49 +0200
+
+vdr-plugin-epg2vdr (1.2.16-0yavdr5~noble) noble; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 15 Jul 2024 20:10:17 +0200
+
+vdr-plugin-epg2vdr (1.2.16-0yavdr4~noble) noble; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 26 Apr 2024 07:04:19 +0200
+
+vdr-plugin-epg2vdr (1.2.16-0yavdr3~noble) noble; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 25 Apr 2024 21:43:47 +0200
+
+vdr-plugin-epg2vdr (1.2.16-0yavdr2~noble) noble; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 02 Apr 2024 15:57:11 +0200
+
+vdr-plugin-epg2vdr (1.2.16-0yavdr1~noble) noble; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 26 Jan 2024 12:12:49 +0000
+
+vdr-plugin-epg2vdr (1.2.16-0yavdr0~jammy) jammy; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 11 Jan 2024 12:07:31 +0000
+
+vdr-plugin-epg2vdr (1.2.15-0yavdr0~jammy) jammy; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 19 Oct 2023 16:04:41 +0000
+
+vdr-plugin-epg2vdr (1.2.14-0yavdr0~jammy) jammy; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 17 Feb 2023 17:10:04 +0000
+
+vdr-plugin-epg2vdr (1.2.12-0yavdr0~jammy) jammy; urgency=medium
+
+  * new upstream version 
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 22 Jan 2023 10:20:19 +0000
+
+vdr-plugin-epg2vdr (1.2.9-0yavdr1~jammy) jammy; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 19 Nov 2022 23:08:09 +0000
+
+vdr-plugin-epg2vdr (1.2.9-0yavdr0~jammy) jammy; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 22 Oct 2022 11:09:37 +0000
+
+vdr-plugin-epg2vdr (1.2.8-0yavdr0~jammy) jammy; urgency=medium
+
+  * new upstream version 
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 19 Oct 2022 13:45:08 +0000
+
+vdr-plugin-epg2vdr (1.2.7-0yavdr0~jammy) jammy; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 29 Apr 2022 11:28:31 +0000
+
+vdr-plugin-epg2vdr (1.2.6-1yavdr1~jammy) jammy; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 17 Apr 2022 08:20:11 +0000
+
+vdr-plugin-epg2vdr (1.2.6-1yavdr0~jammy) jammy; urgency=medium
+
+  * fix build dependency 
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 19 Feb 2022 13:33:50 +0000
+
+vdr-plugin-epg2vdr (1.2.6-0yavdr1~jammy) jammy; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 19 Feb 2022 13:25:25 +0000
+
+vdr-plugin-epg2vdr (1.2.6-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 12 Feb 2022 10:21:20 +0100
+
+vdr-plugin-epg2vdr (1.2.5-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream version 
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 04 Jan 2022 15:42:28 +0100
+
+vdr-plugin-epg2vdr (1.2.0-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 31 Dec 2021 10:35:00 +0100
+
+vdr-plugin-epg2vdr (1.1.118-0yavdr3~focal) focal; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 14 May 2021 11:32:19 +0200
+
+vdr-plugin-epg2vdr (1.1.118-0yavdr3~focal) focal; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 21 Apr 2021 20:02:45 +0200
+
+vdr-plugin-epg2vdr (1.1.118-0yavdr2~focal) focal; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 12 Feb 2021 23:50:23 +0100
+
+vdr-plugin-epg2vdr (1.1.118-0yavdr2~focal) focal; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 27 Dec 2020 20:32:22 +0100
+
+vdr-plugin-epg2vdr (1.1.118-0yavdr1~focal) focal; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 20 Oct 2020 17:19:53 +0200
+
+vdr-plugin-epg2vdr (1.1.118-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 23 Sep 2020 10:42:16 +0200
+
+vdr-plugin-epg2vdr (1.1.117-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 18 Aug 2020 18:58:18 +0200
+
+vdr-plugin-epg2vdr (1.1.116-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 17 Aug 2020 17:19:36 +0200
+
+vdr-plugin-epg2vdr (1.1.115-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 14 Aug 2020 19:29:53 +0200
+
+vdr-plugin-epg2vdr (1.1.113-0yavdr4~focal) focal; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 15 Jun 2020 14:14:23 +0200
+
+vdr-plugin-epg2vdr (1.1.113-0yavdr3~focal) focal; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 25 May 2020 18:32:35 +0200
+
+vdr-plugin-epg2vdr (1.1.113-0yavdr2~focal) focal; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 18 May 2020 09:50:09 +0200
+
+vdr-plugin-epg2vdr (1.1.113-0yavdr1~focal) focal; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 04 May 2020 20:34:36 +0200
+
+vdr-plugin-epg2vdr (1.1.113-0yavdr0~focal) focal; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 26 Apr 2020 07:43:16 +0200
+
+vdr-plugin-epg2vdr (1.1.113-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 23 Mar 2020 18:45:12 +0100
+
+vdr-plugin-epg2vdr (1.1.112-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 13 Mar 2020 19:35:53 +0100
+
+vdr-plugin-epg2vdr (1.1.111-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 01 Mar 2020 18:18:36 +0100
+
+vdr-plugin-epg2vdr (1.1.110-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 24 Feb 2020 20:50:18 +0100
+
+vdr-plugin-epg2vdr (1.1.109-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 17 Feb 2020 19:47:54 +0100
+
+vdr-plugin-epg2vdr (1.1.107+git20200216-1-3498fff-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream snapshot
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 16 Feb 2020 12:08:39 +0100
+
+vdr-plugin-epg2vdr (1.1.107-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 15 Feb 2020 14:18:42 +0100
+
+vdr-plugin-epg2vdr (1.1.106-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 23 Dec 2019 13:15:19 +0100
+
+vdr-plugin-epg2vdr (1.1.105-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 19 Dec 2019 16:11:46 +0100
+
+vdr-plugin-epg2vdr (1.1.104-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 15 Dec 2019 14:24:05 +0100
+
+vdr-plugin-epg2vdr (1.1.103-0yavdr0~focal) focal; urgency=medium
+
+  * new upstream snapshot
+  * drop obsolete patch 
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 02 Dec 2019 11:04:51 +0100
+
+vdr-plugin-epg2vdr (1.1.102-3yavdr0~focal) focal; urgency=medium
+
+  * add patch to fix python includes  (until it is added Upstream)
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 30 Nov 2019 17:20:47 +0100
+
+vdr-plugin-epg2vdr (1.1.102-2yavdr0~focal) focal; urgency=medium
+
+  * fix build-dependencies 
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 28 Nov 2019 14:45:14 +0100
+
+vdr-plugin-epg2vdr (1.1.102-1yavdr0~focal) focal; urgency=medium
+
+  * rebuild for focal
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 28 Nov 2019 14:31:08 +0100
+
+vdr-plugin-epg2vdr (1.1.102-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 28 Nov 2019 14:18:06 +0100
+
+vdr-plugin-epg2vdr (1.1.101-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 30 Oct 2019 09:30:43 +0100
+
+vdr-plugin-epg2vdr (1.1.100-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 29 Oct 2019 15:36:43 +0100
+
+vdr-plugin-epg2vdr (1.1.98-2yavdr0~bionic) bionic; urgency=medium
+
+  * add patch by kfb77 which should help to prevent crashes when a recording ends
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 08 Oct 2019 09:40:28 +0200
+
+vdr-plugin-epg2vdr (1.1.98-1yavdr5~bionic) bionic; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 17 Jun 2019 16:39:31 +0200
+
+vdr-plugin-epg2vdr (1.1.98-1yavdr4~bionic) bionic; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 29 May 2019 09:41:04 +0200
+
+vdr-plugin-epg2vdr (1.1.98-1yavdr3~bionic) bionic; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 20 Mar 2019 12:47:02 +0100
+
+vdr-plugin-epg2vdr (1.1.98-1yavdr2~bionic) bionic; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 16 Mar 2019 10:40:17 +0100
+
+vdr-plugin-epg2vdr (1.1.98-1yavdr1~bionic) bionic; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 11 Mar 2019 14:39:46 +0100
+
+vdr-plugin-epg2vdr (1.1.98-1yavdr0~bionic) bionic; urgency=medium
+
+  * add patch to work around crash on timer end
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 01 Mar 2019 11:02:40 +0100
+
+vdr-plugin-epg2vdr (1.1.98-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 20 Dec 2018 10:49:31 +0100
+
+vdr-plugin-epg2vdr (1.1.97+git20181015-1-77af073-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream snapshot
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 16 Oct 2018 08:47:52 +0200
+
+vdr-plugin-epg2vdr (1.1.97-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 26 Sep 2018 19:05:17 +0000
+
+vdr-plugin-epg2vdr (1.1.96-0yavdr5~bionic) bionic; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 15 Apr 2018 14:07:05 +0000
+
+vdr-plugin-epg2vdr (1.1.96-0yavdr4~bionic) bionic; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 15 Apr 2018 13:12:15 +0000
+
+vdr-plugin-epg2vdr (1.1.96-0yavdr3~bionic) bionic; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 15 Apr 2018 13:03:01 +0000
+
+vdr-plugin-epg2vdr (1.1.96-0yavdr2~bionic) bionic; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 15 Apr 2018 12:38:38 +0000
+
+vdr-plugin-epg2vdr (1.1.96-0yavdr1~bionic) bionic; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 14 Apr 2018 15:25:10 +0000
+
+vdr-plugin-epg2vdr (1.1.96-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 11 Apr 2018 18:05:21 +0000
+
+vdr-plugin-epg2vdr (1.1.95-1yavdr2~bionic) bionic; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 09 Apr 2018 06:40:12 +0000
+
+vdr-plugin-epg2vdr (1.1.95-1yavdr1~bionic) bionic; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 03 Apr 2018 09:14:40 +0000
+
+vdr-plugin-epg2vdr (1.1.95-1yavdr0~bionic) bionic; urgency=medium
+
+  * update build-dependency to libmariadbclient-dev
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 27 Mar 2018 12:23:29 +0000
+
+vdr-plugin-epg2vdr (1.1.95-0yavdr1~bionic) bionic; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 19 Mar 2018 07:35:03 +0000
+
+vdr-plugin-epg2vdr (1.1.95-0yavdr0~bionic) bionic; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 18 Mar 2018 16:50:34 +0000
+
+vdr-plugin-epg2vdr (1.1.95-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 11 Mar 2018 18:49:34 +0000
+
+vdr-plugin-epg2vdr (1.1.93-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 10 Mar 2018 11:01:04 +0000
+
+vdr-plugin-epg2vdr (1.1.92+git20180307-1-f7db728-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream snapshot
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 07 Mar 2018 19:16:12 +0000
+
+vdr-plugin-epg2vdr (1.1.91-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 27 Feb 2018 09:41:33 +0000
+
+vdr-plugin-epg2vdr (1.1.90-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 25 Feb 2018 08:13:04 +0000
+
+vdr-plugin-epg2vdr (1.1.88-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 23 Feb 2018 15:09:02 +0000
+
+vdr-plugin-epg2vdr (1.1.87-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 21 Feb 2018 18:25:13 +0000
+
+vdr-plugin-epg2vdr (1.1.86-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream release
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 20 Feb 2018 07:50:08 +0000
+
+vdr-plugin-epg2vdr (1.1.84-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream release
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 16 Feb 2018 07:22:46 +0000
+
+vdr-plugin-epg2vdr (1.1.83+git20180210-1-4b7842f-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream snapshot 
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 14 Feb 2018 12:07:39 +0000
+
+vdr-plugin-epg2vdr (1.1.81-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream release
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 03 Feb 2018 17:01:40 +0000
+
+vdr-plugin-epg2vdr (1.1.80-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream release
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 29 Jan 2018 10:58:28 +0100
+
+vdr-plugin-epg2vdr (1.1.78-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 27 Dec 2017 08:53:21 +0100
+
+vdr-plugin-epg2vdr (1.1.77-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream release
+    - allow plugin to be built without aux patch for VDR 2.2.0
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 22 Dec 2017 11:38:20 +0100
+
+vdr-plugin-epg2vdr (1.1.76+git20171221-3-370d37d-0yavdr0~bionic) bionic; urgency=medium
+
+  * new upstream snapshot
+    - fixes FTBS with VDR 2.2.0
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 22 Dec 2017 10:00:13 +0100
+
+vdr-plugin-epg2vdr (1.1.74-0yavdr1~bionic) bionic; urgency=medium
+
+  * increase build number
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 20 Dec 2017 17:29:46 +0100
+
+vdr-plugin-epg2vdr (1.1.74-0yavdr0~bionic) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 20 Dec 2017 16:45:32 +0100
+
+vdr-plugin-epg2vdr (1.1.73-0yavdr1~xenial) xenial; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 30 Jun 2017 19:08:59 +0200
+
+vdr-plugin-epg2vdr (1.1.73-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 28 Jun 2017 20:33:49 +0200
+
+vdr-plugin-epg2vdr (1.1.72-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream snapshot
+  * add patch to fix FTBS with VDR 2.2.0 (thanks to wolfi.m)
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 23 Jun 2017 08:35:15 +0200
+
+vdr-plugin-epg2vdr (1.1.68+git20170611.ca32dc1-0yavdr1~xenial) xenial; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 12 Jun 2017 11:42:26 +0200
+
+vdr-plugin-epg2vdr (1.1.68+git20170611.ca32dc1-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream snapshot
+    - add VDR 2.3.7 compatibility
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 11 Jun 2017 22:29:52 +0200
+
+vdr-plugin-epg2vdr (1.1.65-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 10 Jun 2017 07:31:41 +0200
+
+vdr-plugin-epg2vdr (1.1.62+git20170602.2a7ae65-0yavdr2~xenial) xenial; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 06 Jun 2017 11:49:17 +0200
+
+vdr-plugin-epg2vdr (1.1.62+git20170602.2a7ae65-0yavdr1~xenial) xenial; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 04 Jun 2017 13:36:22 +0200
+
+vdr-plugin-epg2vdr (1.1.62+git20170602.2a7ae65-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream snapshot
+    - sorted timers
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 02 Jun 2017 14:16:33 +0200
+
+vdr-plugin-epg2vdr (1.1.61-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+    - bugfix: Fixed aux handling
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 23 May 2017 08:49:15 +0200
+
+vdr-plugin-epg2vdr (1.1.60-0yavdr1~xenial) xenial; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 08 May 2017 10:02:48 +0200
+
+vdr-plugin-epg2vdr (1.1.60-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+    - bugfix: Fixed possible crash on channel lock
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 07 May 2017 12:16:30 +0200
+
+vdr-plugin-epg2vdr (1.1.59-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+    - bugfix: fixed crash on missing channels
+    - bugfix: fixed rouding problem for recording info
+    - change: fill timersdone table for timers created via OSD, too
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 05 May 2017 18:29:37 +0200
+
+vdr-plugin-epg2vdr (1.1.57-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+    - bugfix: Fixed possible problem with epg for new channels since vdr 2.3.x 
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 02 May 2017 13:25:38 +0200
+
+vdr-plugin-epg2vdr (1.1.56-0yavdr2~xenial) xenial; urgency=medium
+
+  * rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 30 Mar 2017 00:05:21 +0200
+
+vdr-plugin-epg2vdr (1.1.56-0yavdr1~xenial) xenial; urgency=medium
+
+  * rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 29 Mar 2017 23:37:33 +0200
+
+vdr-plugin-epg2vdr (1.1.56-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+    - bugfix: Fixed problem with service interface (frequent db reconnects) 
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 24 Mar 2017 15:59:59 +0100
+
+vdr-plugin-epg2vdr (1.1.52-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version:
+    - fix crash in epg menu 
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 21 Mar 2017 18:59:58 +0100
+
+vdr-plugin-epg2vdr (1.1.51+git20170320-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream snapshot:
+    - change: Removed compiler warnings when using clang
+    - added: Added clang++ to Make.config (as optional compiler)
+    - change: Fixed APIVERSION check for VDR < 2.2.0 (thx to nobanzai)
+    - fixed syntax error
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 21 Mar 2017 17:00:55 +0100
+
+vdr-plugin-epg2vdr (1.1.50-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+    - bugfix: Fixed AMC address lookup
+    - bugfix: Fixed possible crash in extended skins interface
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 20 Mar 2017 08:06:45 +0100
+
+vdr-plugin-epg2vdr (1.1.48-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+    - further improvement of extended skins interface
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 16 Mar 2017 22:07:34 +0100
+
+vdr-plugin-epg2vdr (1.1.47+git20170315-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream snapshot
+    - added extra data to plugin interface
+  * version 1.1.47 (horchi)
+    - added: Started extended event interface for skins
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 16 Mar 2017 09:11:33 +0100
+
+vdr-plugin-epg2vdr (1.1.46-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+    - added: Added column for future features to vdrs table
+    - change: Fixed order of push/tag in Makefile
+    - change: Improved Makefile
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 11 Mar 2017 10:37:22 +0100
+
+vdr-plugin-epg2vdr (1.1.43+git2017-03-01-0940-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream snapshot
+    - Update TODOs
+  * version 1.1.43 (horchi)
+    - bugfix: Fixed crash in mneues without database connection
+  * version 1.1.42
+    - minor log message changes
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 01 Mar 2017 17:36:09 +0100
+
+vdr-plugin-epg2vdr (1.1.41+git2017-02-27-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream snapshot
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 28 Feb 2017 08:56:27 +0100
+
+vdr-plugin-epg2vdr (1.1.34-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+    - bugfix: Fixed possible crash at timer update (now the AUX Field may contain up to 10.000 characters)
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 10 Feb 2017 09:54:29 +0100
+
+vdr-plugin-epg2vdr (1.1.33-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+    - added: Added epg handler patch for VDR 2.3.2
+       -> enhancement of epg handler interface to fix a threading
+           problem which can occur on systems with more than one tuner
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 09 Feb 2017 21:19:39 +0100
+
+vdr-plugin-epg2vdr (1.1.32-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+    - bugfix: first program menu item now also selectable
+    - added: Added patch for VDR >= 2.3.1 (must be used to build this plugin)
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 09 Feb 2017 01:07:53 +0100
+
+vdr-plugin-epg2vdr (1.1.30-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version 1.1.30:
+    - bugfix: fix of '1.1.28' next try ;)
+    - bugfix: fixed compilr issue with gcc 6.2.0
+    - bugfix: fixed sql error in epg search menu
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 06 Feb 2017 18:39:03 +0100
+
+vdr-plugin-epg2vdr (1.1.27-0yavdr0~xenial) xenial; urgency=medium
+
+  * version 1.1.27 (horchi)
+    - bugfix: fixed timer naming problem
+  * version 1.1.26 (horchi)
+    - bugfix: Fixed buf wir cyclic db reconnect
+
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 04 Feb 2017 09:16:17 +0100
+
+vdr-plugin-epg2vdr (1.1.25-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version:
+    - version 1.1.25 (horchi) - added: support of namingmode 'template' by
+   epgd/epghttpd
+    - version 1.1.24 (horchi) - change: Finished porting to VDR 2.3.2
+    - version 1.1.22 (horchi) - change: fixed problem with 2.3.1 / 2.3.2
+    - version 1.1.21 (horchi) - change: now compiles with vdr 2.3.1 / 2.3.2
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 19 Jan 2017 14:16:29 +0100
+
+vdr-plugin-epg2vdr (1.1.20+git201701031632-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream snapshot:
+    - minor compatibility changes
+    - version 1.1.20 (horchi) - bugfix: fixed reinstate of events in epg
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 07 Jan 2017 09:01:45 +0100
+
+vdr-plugin-epg2vdr (1.1.19-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream snapshot
+    - version 1.1.19 (horchi) change: merging of lib
+    - version 1.1.18 (horchi) added: Delete / Modify of timers on event changes
+    - version 1.1.17 (horchi) change: improved format strings for 32 bit systems
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 01 Dec 2016 14:18:03 +0100
+
+vdr-plugin-epg2vdr (1.1.16+git.1663aa33e-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream snapshot
+    - 2016-11-02: minor fixes
+    - 2016-11-02: version 1.1.16 (horchi) - change: improved cleanup handling for recordings
+    - 2016-11-02: version 1.1.15 (horchi) - added:
+    - 2016-11-01: version 1.1.14 (horchi) - added: added title for genn and yellow button in epg-detail menu
+    - 2016-11-01: version 1.1.13 (horchi) - added: channel toggle in Event-Info menu (green/yellow)
+    - 2016-11-01: version 1.1.12 (horchi) - added: started implementaion of schedule toggle in Event-Info menu
+    - 2016-11-01: version 1.1.11 (horchi) - added: started implementaion of schedule toggle in Event-Info menu
+    - 2016-10-30: version 1.1.11 (horchi) - added: mark epgseasrch timers (set source to 'epgs')
+    - 2016-10-20: version 1.1.10 (horchi) - added: update of db field timers._starttime
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 09 Nov 2016 15:16:12 +0100
+
+vdr-plugin-epg2vdr (1.1.9-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+    - improved recording search using LV distance < 50%
+    - added: search repetition of event
+    - bugfix: fixed missing close of socket handle
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 19 Oct 2016 15:52:43 +0200
+
+vdr-plugin-epg2vdr (1.1.6-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+    - bugfix: fixed refreah of schedules menu on timer create
+    - change: minor change on menu refresh
+    - bugfix: fixed channel switch in schedule menu
+    - change: started increase of event id to unsigned int64
+    - change: increased event id to unsigned int64
+    - added: support of long eventids for tvsp (merged dev into master)
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 26 Aug 2016 08:35:36 +0200
+
+vdr-plugin-epg2vdr (1.1.0-0yavdr0~xenial) xenial; urgency=medium
+
+  * rebuild for xenial
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 04 Jul 2016 14:42:46 +0200
+
+vdr-plugin-epg2vdr (1.1.0-0yavdr0~trusty) trusty; urgency=medium
+
+  * new upstream version:
+    - merged http branch (yay!)
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 04 Jul 2016 13:43:36 +0200
+
+vdr-plugin-epg2vdr (1.0.49-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 16 Jun 2016 17:21:44 +0200
+
+vdr-plugin-epg2vdr (1.0.48-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 01 Jun 2016 19:55:28 +0200
+
+vdr-plugin-epg2vdr (1.0.46-0yavdr1~xenial) xenial; urgency=medium
+
+  * rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 29 May 2016 23:08:00 +0200
+
+vdr-plugin-epg2vdr (1.0.46-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 26 May 2016 09:20:41 +0200
+
+vdr-plugin-epg2vdr (1.0.45-1-1518db0cb-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 24 May 2016 12:01:41 +0200
+
+vdr-plugin-epg2vdr (1.0.44-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 24 May 2016 07:32:36 +0200
+
+vdr-plugin-epg2vdr (1.0.41-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 21 May 2016 08:31:06 +0200
+
+vdr-plugin-epg2vdr (1.0.40-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 19 May 2016 08:47:44 +0200
+
+vdr-plugin-epg2vdr (1.0.38-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 17 May 2016 10:54:03 +0200
+
+vdr-plugin-epg2vdr (1.0.35-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 11 May 2016 09:10:32 +0200
+
+vdr-plugin-epg2vdr (1.0.33-1-09bca2b-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 04 May 2016 17:03:44 +0200
+
+vdr-plugin-epg2vdr (1.0.30-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 02 May 2016 14:23:45 +0200
+
+vdr-plugin-epg2vdr (1.0.26-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 22 Apr 2016 18:22:59 +0200
+
+vdr-plugin-epg2vdr (1.0.22-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 21 Apr 2016 21:08:24 +0200
+
+vdr-plugin-epg2vdr (1.0.21-0yavdr0~xenial) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 20 Apr 2016 17:03:40 +0200
+
+vdr-plugin-epg2vdr (2:0.3.46-28-gbc604c8+http-0frodo0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot
+  * bc604c8: 2016-04-20: version 1.0.20 (horchi) \n   - change: set
+    plugin menu category to mcMain\n   - added:  ForEachTimer to service
+    interface\n   - bugfix: fixed active/deactive distribution\n\n
+
+ -- Frodo <frodo.vdr@gmx.net>  Wed, 20 Apr 2016 13:54:00 +0200
+
+vdr-plugin-epg2vdr (2:0.3.46-27-g02ed45f+http-0frodo0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot
+  * 02ed45f: 2016-04-19: version 1.0.19 (horchi) \n   - bugfix: fixed
+    timer menu refresh\n\n
+
+ -- Frodo <frodo.vdr@gmx.net>  Tue, 19 Apr 2016 21:16:07 +0200
+
+vdr-plugin-epg2vdr (2:0.3.46-26-gd56241f+http-0frodo0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot
+  * d56241f: 2016-04-19: version 1.0.18 (horchi) \n   - bugfix: fixed
+    active/deactive handling in timers menu\n\n
+
+ -- Frodo <frodo.vdr@gmx.net>  Tue, 19 Apr 2016 09:21:06 +0200
+
+vdr-plugin-epg2vdr (2:0.3.46-24-g99e876f+http-0frodo0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot
+  * 99e876f: 2016-04-18: version 1.0.16 (horchi) \n   - added: more
+    german translations (thx to utility)\n\n
+
+ -- Frodo <frodo.vdr@gmx.net>  Mon, 18 Apr 2016 13:18:02 +0200
+
+vdr-plugin-epg2vdr (2:0.3.46-16-gdfff1cd+http-0frodo0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot
+  * dfff1cd: 2016-04-17: version 1.0.11 (horchi) \n   - change: removed
+    needless dependency \n\n
+
+ -- Frodo <frodo.vdr@gmx.net>  Sun, 17 Apr 2016 11:15:19 +0200
+
+vdr-plugin-epg2vdr (2:0.3.46-14-g8e4b2b2+http-0frodo0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot
+  * 8e4b2b2: 2016-04-15: version 1.0.10 (horchi) \n   - bugfix: fixed
+    column width of search result menu\n\n
+
+ -- Frodo <frodo.vdr@gmx.net>  Fri, 15 Apr 2016 20:58:12 +0200
+
+vdr-plugin-epg2vdr (2:0.3.46-11-g63122d9+http-0frodo0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot
+  * 63122d9: 2016-04-15: version 1.0.7 (horchi) \n   - added: setup
+    option to x-change kBlue and kOk\n\n
+
+ -- Frodo <frodo.vdr@gmx.net>  Fri, 15 Apr 2016 12:40:05 +0200
+
+vdr-plugin-epg2vdr (2:0.3.46-10-g20c3dc9+http-0frodo0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot
+  * 20c3dc9: 2016-04-14: version 1.0.6 (horchi) \n   - bugfix: fixed
+    crash on large quicktimes value\n\n
+
+ -- Frodo <frodo.vdr@gmx.net>  Fri, 15 Apr 2016 06:20:10 +0200
+
+vdr-plugin-epg2vdr (2:0.3.46-4-g30972ae+http-0frodo0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot
+  * 30972ae: 2016-04-05: version 1.0.0 (horchi)\n   - change: First BETA
+    release\n   - change: Added config option 'create timer local'\n   -
+    change: Use WEB settings of 'default VDR' at timer create\n\n
+
+ -- Frodo <frodo.vdr@gmx.net>  Tue, 05 Apr 2016 20:22:21 +0200
+
+vdr-plugin-epg2vdr (2:0.3.46-3-gbfcb6dd+http-0frodo0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot
+  * bfcb6dd: 2016-03-30: version 0.3.49 (horchi)\n   - bugfix: fixed
+    default network device, \n             using first of device list
+    except 'lo' as default\n\n
+
+ -- Frodo <frodo.vdr@gmx.net>  Wed, 30 Mar 2016 08:46:07 +0200
+
+vdr-plugin-epg2vdr (2:0.3.46-2-g9aa3f28+http-0frodo0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot
+  * 9aa3f28: 2016-03-30: version 0.3.48 (horchi)\n   - bugfix: fixed
+    buffer error on large aux values\n\n
+
+ -- Frodo <frodo.vdr@gmx.net>  Wed, 30 Mar 2016 08:19:44 +0200
+
+vdr-plugin-epg2vdr (2:0.3.46-1-ge5d2c60+http-1frodo0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot
+  * e5d2c60: 2016-03-26: version 0.3.47 (horchi)\n   - bugfix: fixed
+    char compare of db API\n\n
+
+ -- Frodo <frodo.vdr@gmx.net>  Sun, 27 Mar 2016 19:01:01 +0200
+
+vdr-plugin-epg2vdr (0.3.46-1-ge5d2c60+http-0frodo0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot
+  * e5d2c60: 2016-03-26: version 0.3.47 (horchi)\n   - bugfix: fixed
+    char compare of db API\n\n
+
+ -- Frodo <frodo.vdr@gmx.net>  Sat, 26 Mar 2016 19:01:51 +0100
+
+vdr-plugin-epg2vdr (0.3.46+http-3frodo0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot
+  * e416c04: 2016-03-22: version 0.3.46 (horchi)\n   - bugfix: fixed
+    format of epg.dat\n\n
+
+ -- Frodo <frodo.vdr@gmx.net>  Thu, 24 Mar 2016 20:42:23 +0100
+
+vdr-plugin-epg2vdr (0.3.46+http-2frodo0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot
+  * e416c04: 2016-03-22: version 0.3.46 (horchi)\n   - bugfix: fixed
+    format of epg.dat\n\n
+
+ -- Frodo <frodo.vdr@gmx.net>  Thu, 24 Mar 2016 20:23:42 +0100
+
+vdr-plugin-epg2vdr (0.3.46+http-1frodo0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot
+  * e416c04: 2016-03-22: version 0.3.46 (horchi)\n   - bugfix: fixed
+    format of epg.dat\n\n
+
+ -- Frodo <frodo.vdr@gmx.net>  Thu, 24 Mar 2016 20:16:23 +0100
+
+vdr-plugin-epg2vdr (0.3.46+http-0frodo0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot
+  * e416c04: 2016-03-22: version 0.3.46 (horchi)\n   - bugfix: fixed
+    format of epg.dat\n\n
+
+ -- Frodo <frodo.vdr@gmx.net>  Thu, 24 Mar 2016 18:51:04 +0100
+
+vdr-plugin-epg2vdr (0.1.13.git20151214.0910+http-0yavdr1~trusty) trusty; urgency=medium
+
+  * rebuild for new vdr abi version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 23 Dec 2015 17:11:59 +0100
+
+vdr-plugin-epg2vdr (0.1.13.git20151214.0910+http-0yavdr0~trusty) trusty; urgency=medium
+
+  * 1st build of http branch
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 20 Dec 2015 18:08:38 +0100
+
+vdr-plugin-epg2vdr (0.1.12.git20151112.0816-0yavdr0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot:
+    - fix possible deadlock on schedules
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 12 Nov 2015 10:41:02 +0100
+
+vdr-plugin-epg2vdr (0.1.12.git20151021.0904-0yavdr0~trusty) trusty; urgency=medium
+
+  * ec38f0c43377: less log messages
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 22 Oct 2015 17:12:49 +0200
+
+vdr-plugin-epg2vdr (0.1.12.git20151020.0531-0yavdr0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot:
+    - changes for backward compatibility
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 20 Oct 2015 18:07:52 +0200
+
+vdr-plugin-epg2vdr (0.1.12.git20151011.1149-0yavdr0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot:
+    - reduce normal log output
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 11 Oct 2015 15:42:52 +0200
+
+vdr-plugin-epg2vdr (0.1.12.git20151010.0939-0yavdr0~trusty) trusty; urgency=medium
+
+  * fixed format string waring for 32-bit builds
+  * fixed possible crash if timer lock can't established
+  * fixed missing symbol
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 10 Oct 2015 12:28:08 +0200
+
+vdr-plugin-epg2vdr (0.1.12.git20151009.1306-0yavdr0~trusty) trusty; urgency=medium
+
+  * new upstream snapshot:
+    - ported to VDR 2.3.1
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 09 Oct 2015 20:27:40 +0200
+
+vdr-plugin-epg2vdr (0.1.12.git20150203.1541-1yavdr1~trusty) trusty; urgency=medium
+
+  * automatic rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 25 May 2015 17:36:48 +0200
+
+vdr-plugin-epg2vdr (0.1.12.git20150203.1541-1yavdr0~trusty) trusty; urgency=medium
+
+  * rework debian dir
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Mon, 06 Apr 2015 11:17:16 +0200
+
+vdr-plugin-epg2vdr (0.1.12.git20150203.1541-0yavdr4~trusty) trusty; urgency=medium
+
+  * automatic rebuild
+
+ -- yavdr package builder <release@yavdr.org>  Fri, 03 Apr 2015 15:16:53 +0200
+
+vdr-plugin-epg2vdr (0.1.12.git20150203.1541-0yavdr3~trusty) trusty; urgency=medium
+
+  * automatic rebuild
+
+ -- Lars Hanisch <dvb@flensrocker.de>  Fri, 20 Feb 2015 11:11:10 +0100
+
+vdr-plugin-epg2vdr (0.1.12.git20150203.1541-0yavdr2~trusty) trusty; urgency=medium
+
+  * automatic rebuild
+
+ -- Lars Hanisch <dvb@flensrocker.de>  Thu, 12 Feb 2015 00:31:26 +0100
+
+vdr-plugin-epg2vdr (0.1.12.git20150203.1541-0yavdr1~trusty) trusty; urgency=medium
+
+  * automatic rebuild
+
+ -- Lars Hanisch <dvb@flensrocker.de>  Sun, 08 Feb 2015 16:14:53 +0100
+
+vdr-plugin-epg2vdr (0.1.12.git20150203.1541-0yavdr0~trusty) trusty; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 05 Feb 2015 08:54:35 +0100
+
+vdr-plugin-epg2vdr (0.1.11.git20141227.1548-0yavdr2~trusty) trusty; urgency=medium
+
+  * automatic rebuild
+
+ -- Lars Hanisch <dvb@flensrocker.de>  Sun, 01 Feb 2015 16:13:57 +0100
+
+vdr-plugin-epg2vdr (0.1.11.git20141227.1548-0yavdr1~trusty) trusty; urgency=medium
+
+  * automatic rebuild
+
+ -- Lars Hanisch <dvb@flensrocker.de>  Sun, 18 Jan 2015 16:32:26 +0100
+
+vdr-plugin-epg2vdr (0.1.11.git20141227.1548-0yavdr0~trusty) trusty; urgency=medium
+
+  * new upstream version
+    - change: deleting old timers from timer table
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sun, 28 Dec 2014 16:50:14 +0100
+
+vdr-plugin-epg2vdr (0.1.10.git20140515.1121-0yavdr1~trusty) trusty; urgency=medium
+
+  * rebuild for trusty
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 15 May 2014 13:31:54 +0200
+
+vdr-plugin-epg2vdr (0.1.10.git20140515.1121-0yavdr0~precise) precise; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 15 May 2014 13:24:40 +0200
+
+vdr-plugin-epg2vdr (0.1.10.git20140513.0914-0yavdr0~precise) precise; urgency=medium
+
+  * test compiling for 32-Bit
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 13 May 2014 14:30:09 +0200
+
+vdr-plugin-epg2vdr (0.1.10.git20140513.0913-2yavdr0~precise) precise; urgency=medium
+
+  * add libxslt-dev dependency
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 13 May 2014 13:51:28 +0200
+
+vdr-plugin-epg2vdr (0.1.10.git20140513.0913-1yavdr0~precise) precise; urgency=medium
+
+  * add libxml2-dev dependency
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 13 May 2014 13:47:46 +0200
+
+vdr-plugin-epg2vdr (0.1.10.git20140513.0913-0yavdr0~precise) precise; urgency=medium
+
+  * new upstream snapshot
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Tue, 13 May 2014 13:37:05 +0200
+
+vdr-plugin-epg2vdr (0.1.8.git20140510.0812-0yavdr0~precise) precise; urgency=medium
+
+  * new upstream snapshot
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 10 May 2014 10:45:45 +0200
+
+vdr-plugin-epg2vdr (0.1.8.git20140509.1437-0yavdr0~precise) precise; urgency=medium
+
+  * new upstream snapshot
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 09 May 2014 16:40:21 +0200
+
+vdr-plugin-epg2vdr (0.1.8.git20140509.1259-1yavdr0~precise) precise; urgency=high
+
+  * add libjpeg-turbo8-dev, libimlib2-dev build-depends
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 09 May 2014 15:40:49 +0200
+
+vdr-plugin-epg2vdr (0.1.8.git20140509.1259-0yavdr0~precise) precise; urgency=high
+
+  * add libcurl dependency
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 09 May 2014 15:29:43 +0200
+
+vdr-plugin-epg2vdr (0.1.8.git20140509.1206-0yavdr0~precise) precise; urgency=medium
+
+  * new upstream snapshot
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 09 May 2014 14:45:23 +0200
+
+vdr-plugin-epg2vdr (0.1.8.git20140508.1307-0yavdr0~precise) precise; urgency=high
+
+  * new upstream snapshot
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Fri, 09 May 2014 11:10:55 +0200
+
+vdr-plugin-epg2vdr (0.1.8.git20140507.0833-0yavdr0~precise) precise; urgency=medium
+
+  * new upstream snapshot
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 08 May 2014 14:11:47 +0200
+
+vdr-plugin-epg2vdr (0.1.8.git20140329.0921-0yavdr2~precise) precise; urgency=medium
+
+  * automatic rebuild
+
+ -- yavdr package builder <release@yavdr.org>  Wed, 02 Apr 2014 22:01:25 +0200
+
+vdr-plugin-epg2vdr (0.1.8.git20140329.0921-0yavdr0~precise) precise; urgency=medium
+
+  * new upstream version
+
+ -- Reiner Paulus <flex0r@gmx.net>  Sat, 29 Mar 2014 10:22:01 +0100
+
+vdr-plugin-epg2vdr (0.1.7.git20140321.1302-0yavdr0~precise) precise; urgency=medium
+
+  * new upstream snapshot
+
+ -- Reiner Paulus <flex0r@gmx.net>  Fri, 21 Mar 2014 14:02:51 +0100
+
+vdr-plugin-epg2vdr (0.1.7-0yavdr0~precise) precise; urgency=medium
+
+  * new upstream version
+
+ -- Reiner Paulus <flex0r@gmx.net>  Mon, 17 Mar 2014 17:55:23 +0100
+
+vdr-plugin-epg2vdr (0.1.5+git20140205-0yavdr0~precise) precise; urgency=medium
+
+  * new upstream version
+  * removed activity check, instead wait up to 20 seconds to give the main loop time to finish
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 05 Mar 2014 17:11:55 +0100
+
+vdr-plugin-epg2vdr (0.1.4-0yavdr0~precise) precise; urgency=medium
+
+  * new upstream version
+
+ -- Reiner Paulus <flex0r@gmx.net>  Fri, 03 Jan 2014 17:43:32 +0100
+
+vdr-plugin-epg2vdr (0.1.3+git20131204-0yavdr0~precise) precise; urgency=medium
+
+  * new upstream version
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Wed, 04 Dec 2013 15:01:32 +0100
+
+vdr-plugin-epg2vdr (0.1.2-0yavdr0~precise) precise; urgency=medium
+
+  * new upstream version
+
+ -- Reiner Paulus <flex0r@gmx.net>  Wed, 20 Nov 2013 16:05:43 +0100
+
+vdr-plugin-epg2vdr (0.1.1-0yavdr0~precise) precise; urgency=medium
+
+  * new upstream version
+
+ -- Reiner Paulus <flex0r@gmx.net>  Mon, 28 Oct 2013 15:51:04 +0100
+
+vdr-plugin-epg2vdr (0.1.0-0yavdr0~precise) precise; urgency=medium
+
+  * new upstream version
+
+ -- Reiner Paulus <flex0r@gmx.net>  Sun, 27 Oct 2013 23:53:42 +0100
+
+vdr-plugin-epg2vdr (0.0.6-1yavdr2~precise) precise; urgency=medium
+
+  * automatic rebuild
+
+ -- yavdr package builder <release@yavdr.org>  Sun, 27 Oct 2013 09:00:52 +0100
+
+vdr-plugin-epg2vdr (0.0.6-1yavdr2~precise) precise; urgency=medium
+
+  * automatic rebuild
+
+ -- yavdr package builder <release@yavdr.org>  Sat, 26 Oct 2013 10:34:10 +0200
+
+vdr-plugin-epg2vdr (0.0.6-1yavdr1~precise) precise; urgency=medium
+
+  * new upstream release
+
+ -- Gerald Dachs <gda@dachsweb.de>  Mon, 16 Sep 2013 20:35:01 +0200
+
+vdr-plugin-epg2vdr (0.0.5-1yavdr1~precise) precise; urgency=medium
+
+  * new upstream release
+
+ -- Gerald Dachs <gda@dachsweb.de>  Thu, 05 Sep 2013 20:22:46 +0200
+
+vdr-plugin-epg2vdr (0.0.4-1yavdr1~precise) precise; urgency=medium
+
+  * new upstream release
+
+ -- Gerald Dachs <gda@dachsweb.de>  Wed, 04 Sep 2013 16:38:05 +0200
+
+vdr-plugin-epg2vdr (0.0.3-1yavdr2~precise) precise; urgency=medium
+
+  * use vdr dependencies
+
+ -- Gerald Dachs <gda@dachsweb.de>  Sun, 01 Sep 2013 21:38:30 +0200
+
+vdr-plugin-epg2vdr (0.0.3-1yavdr1~precise) precise; urgency=medium
+
+  * initial release
+
+ -- Gerald Dachs <gda@dachsweb.de>  Sun, 01 Sep 2013 20:33:07 +0200

@@ -1,0 +1,38 @@
+Source: vdr-plugin-epg2vdr
+Section: video
+Priority: extra
+Maintainer: Gerald Dachs <gda@dachsweb.de>
+Build-Depends: cdbs,
+ debhelper (>= 8),
+ vdr-dev (>= 2.2.0-1),
+ pkg-config,
+ libmariadb-dev,
+ uuid-dev,
+ libssl-dev,
+ libcurl4-openssl-dev,
+ libjpeg-turbo8-dev,
+ libimlib2-dev,
+ libxml2-dev,
+ libxslt1-dev,
+ python3-dev,
+ libjansson-dev,
+ libarchive-dev,
+ libtinyxml2-dev
+Standards-Version: 3.9.5
+Homepage: http://projects.vdr-developer.org/projects/plg-epg2vdr
+
+Package: vdr-plugin-epg2vdr
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${vdr:Depends}
+Description: VDR EPG2VDR Plugin
+ VDR EPG2VDR Plugin of client/server EPG solution based on a MySQL database for VDR
+
+Package: vdr-plugin-epg2vdr-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: vdr-plugin-epg2vdr (= ${binary:Version}), ${misc:Depends}, ${vdr:Depends}
+Description: debugging symbols for vdr-plugin-epg2vdr
+ .
+ This package contains only the debugging symbols for vdr-plugin-epg2vdr
+
