@@ -1,0 +1,80 @@
+Index: vdr-plugin-epg2vdr-1.2.16/update.c
+===================================================================
+--- vdr-plugin-epg2vdr-1.2.16.orig/update.c	2024-01-11 10:11:25.000000000 +0100
++++ vdr-plugin-epg2vdr-1.2.16/update.c	2024-09-14 22:47:04.991158906 +0200
+@@ -1646,7 +1646,11 @@
+ 
+             // get event / timer
+ 
++#if APIVERSNUM > 20501
++            if ((event = s->GetEventById(eventsDb->getIntValue("USEID"))))
++#else
+             if ((event = s->GetEvent(eventsDb->getIntValue("USEID"))))
++#endif
+             {
+                if (Us::isRemove(updFlg))
+                   tell(2, "Remove event %uld of channel '%s' due to updflg %c",
+Index: vdr-plugin-epg2vdr-1.2.16/recording.c
+===================================================================
+--- vdr-plugin-epg2vdr-1.2.16.orig/recording.c	2024-01-11 10:11:25.000000000 +0100
++++ vdr-plugin-epg2vdr-1.2.16/recording.c	2024-09-14 22:51:44.928470296 +0200
+@@ -432,7 +432,11 @@
+                cStateKey schedulesKey;
+                const cSchedules* schedules = cSchedules::GetSchedulesRead(schedulesKey, 500/*ms*/);
+                const cSchedule* s = schedules ? (cSchedule*)schedules->GetSchedule(channel) : 0;
++#if (defined (APIVERSNUM) && (APIVERSNUM >= 20501))
++               const cEvent* event = s ? s->GetEventById(eventId) : 0;
++#else
+                const cEvent* event = s ? s->GetEvent(eventId) : 0;
++#endif
+ 
+                if (event && !isEmpty(event->Aux()) && xml.set(event->Aux()) == success)
+                {
+Index: vdr-plugin-epg2vdr-1.2.16/timer.c
+===================================================================
+--- vdr-plugin-epg2vdr-1.2.16.orig/timer.c	2024-01-11 10:11:25.000000000 +0100
++++ vdr-plugin-epg2vdr-1.2.16/timer.c	2024-09-14 22:54:44.533109156 +0200
+@@ -301,7 +301,11 @@
+             continue;
+          }
+ 
++#if (defined (APIVERSNUM) && (APIVERSNUM >= 20501))
++         if (eventid > 0 && !(event = s->GetEventById(eventid)))
++#else
+          if (eventid > 0 && !(event = s->GetEvent(eventid)))
++#endif
+          {
+             const cChannel* channel = channels->GetByChannelID(channelId);
+ 
+Index: vdr-plugin-epg2vdr-1.2.16/ttools.c
+===================================================================
+--- vdr-plugin-epg2vdr-1.2.16.orig/ttools.c	2024-01-11 10:11:25.000000000 +0100
++++ vdr-plugin-epg2vdr-1.2.16/ttools.c	2024-09-14 22:57:37.783834179 +0200
+@@ -466,7 +466,11 @@
+          const cSchedule* schedule = schedules->GetSchedule(channel);
+ 
+          if (schedule)
++#if (defined (APIVERSNUM) && (APIVERSNUM >= 20501))
++            event = schedule->GetEventById(timerRow->getIntValue("EVENTID"));
++#else
+             event = schedule->GetEvent(timerRow->getIntValue("EVENTID"));
++#endif
+       }
+ 
+ #if defined (APIVERSNUM) && (APIVERSNUM >= 20301)
+Index: vdr-plugin-epg2vdr-1.2.16/menusched.c
+===================================================================
+--- vdr-plugin-epg2vdr-1.2.16.orig/menusched.c	2024-01-11 10:11:25.000000000 +0100
++++ vdr-plugin-epg2vdr-1.2.16/menusched.c	2024-09-14 23:00:06.924877320 +0200
+@@ -781,7 +781,11 @@
+       const char* strChannelId = menuDb->useeventsDb->getStrValue("CHANNELID");
+       const cChannel* channel = channels->GetByChannelID(tChannelID::FromString(strChannelId));
+       const cSchedule* schedule = schedules->GetSchedule(channel);
++#if (defined (APIVERSNUM) && (APIVERSNUM >= 20501))
++      const cEvent* event = !schedule ? 0 :  schedule->GetEventById(menuDb->useeventsDb->getIntValue("USEID"));
++#else
+       const cEvent* event = !schedule ? 0 :  schedule->GetEvent(menuDb->useeventsDb->getIntValue("USEID"));
++#endif
+ 
+       if (event)
+          Add(new cMenuEpgScheduleItem(menuDb, event, channel, yes));

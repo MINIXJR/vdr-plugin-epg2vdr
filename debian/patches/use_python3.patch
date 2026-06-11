@@ -1,0 +1,22 @@
+Index: vdr-plugin-epg2vdr-1.2.5/Make.config
+===================================================================
+--- vdr-plugin-epg2vdr-1.2.5.orig/Make.config	2022-01-04 15:43:09.433768818 +0100
++++ vdr-plugin-epg2vdr-1.2.5/Make.config	2022-01-04 15:43:39.897769927 +0100
+@@ -7,7 +7,7 @@
+ 
+ # user defined stuff
+ 
+-PREFIX = /usr/local
++PREFIX = /usr
+ 
+ # enable AUX patch, in VDR >= 2.3.4 not needed!
+ #WITH_AUX_PATCH = 1
+@@ -30,7 +30,7 @@
+ 
+ # set python interpreter
+ 
+-PYTHON ?= python
++PYTHON ?= python3
+ 
+ ifdef USE_CLANG
+   CC = clang++

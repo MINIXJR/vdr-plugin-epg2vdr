@@ -1,0 +1,15 @@
+vdr-plugin-epg2vdr (1.1.0-0yavdr0~trusty) trusty; urgency=medium
+    Caution: this new version is not compatible with epgd < 1.1.0
+    To upgrade your systems the following procedure is recommended:
+    1) Start all machines running vdr-plugin-epg2vdr
+    2) Stop vdr on all machines
+    3) Stop epgd (from package vdr-epg-daemon)
+    4) Drop all tables used by epg2vdr (e.g. by running "sudo epgd-tool -drop-all")
+    5) Update epgd (vdr-epg-daemon) to version 1.1.0 and read the changelog and README
+    6) Start epgd
+    7) Start epghttpd (if needed)
+    8) Update vdr-plugin-epg2vdr and vdr-plugin-scraper2vdr on all machines to version >= 1.1.0
+    9) delete /var/cache/epg.data and the folder /var/cache/vdr/plugins/scraper2vdr
+    10) After the initial data update of epgd has finished, start your VDRs again
+    
+
