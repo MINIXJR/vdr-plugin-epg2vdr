@@ -338,8 +338,27 @@ int updateRowByTimer(cDbRow* timerRow, const cTimer* t)
    time_t endTime = hhmm2L(t->Stop(), t->Stop() < t->Start() ? t->Day() + tmeSecondsPerDay : t->Day());
 
    timerRow->setValue("VDRUUID", Epg2VdrConfig.uuid);
-   timerRow->setValue("EVENTID", t->Event() ? (long)t->Event()->EventID() : 0);
-   if (t->Event()) timerRow->setValue("EVTSTARTTIME", t->Event()->StartTime());
+
+   // Bug B fix: don't overwrite an existing timer.eventid with VDR's current
+   // cTimer::Event() match. VDR-Core's cTimer::SetEventFromSchedule() picks the
+   // event with the most overlap (longest duration on tie), which can clobber
+   // the epgd-assigned useid - either to a parallel DVB-EIT entry on multi-
+   // source channels (CC yavdrbox) or to a longer neighboring event on single-
+   // source channels (SUPER RTL Tom & Jerry 5min adjacent to 15min). The
+   // searchtimer's dedup check (selectRPTimerByEvent) then fails to find the
+   // timer by its original useid and creates duplicates, or epgd checkTimers
+   // rejects the row because the now-foreign eventid isn't in useevents.
+   //
+   // Only fill EVENTID/EVTSTARTTIME for fresh inserts (existing dbId is 0),
+   // which is the path for manually created VDR-OSD timers or imports from
+   // other plugins (epgsearch etc.). For rows that already carry an eventid
+   // set by epgd, leave them untouched.
+   long existingEventId = timerRow->getIntValue("EVENTID");
+   if (!existingEventId && t->Event())
+   {
+      timerRow->setValue("EVENTID", (long)t->Event()->EventID());
+      timerRow->setValue("EVTSTARTTIME", t->Event()->StartTime());
+   }
    timerRow->setValue("_STARTTIME", startTime);
    timerRow->setValue("_ENDTIME", endTime);
    timerRow->setValue("CHANNELID", channelId);
