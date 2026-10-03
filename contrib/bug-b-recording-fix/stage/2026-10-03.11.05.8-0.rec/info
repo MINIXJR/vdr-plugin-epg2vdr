@@ -1,0 +1,13 @@
+C S19.2E-1-1089-12040 SUPER RTL
+E 1357214 1791019200 300 50 13
+T Die Tom und Jerry Show
+S Hofnarr Tom
+D Kategorie: Serie||Ein Bäckerpärchen wünscht sich eine kleine Katze, um eine Maus davon abzuhalten, ihre Kuchen anzuknabbern. Doch das führt zu einigen Komplikationen.||Serie: Die Tom und Jerry Show|Kurzname: Die Tom und Jerry Show|Episode: Hofnarr Tom|Staffel: 5|Staffelfolge: 9|Staffelfolgen: 39|Folge: 295||Quelle: DVB
+G 10
+X 2 03 deu 
+X 3 03 deu 
+F 25 720 576 i 16:9
+P 50
+L 99
+O 1283
+@ <epgd><expression>Tom und Jerry</expression><autotimerinssp></autotimerinssp><doneid>155098</doneid><autotimerid>281</autotimerid><template></template><namingmode>1</namingmode><directory>Serien</directory><source>epgd</source><timerid>11012</timerid></epgd>

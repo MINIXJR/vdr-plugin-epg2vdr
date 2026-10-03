@@ -1,0 +1,13 @@
+C S19.2E-1-1089-12040 SUPER RTL
+E 1357212 1791018600 300 50 2
+T Die Tom und Jerry Show
+S Die drei kleinen Mäuse
+D Kategorie: Serie||Papa Maus erzählt seinen Kindern die Geschichte von den drei kleinen Schweinen.||Serie: Die Tom und Jerry Show|Kurzname: Die Tom und Jerry Show|Episode: Die drei kleinen Mäuse|Staffel: 5|Staffelfolge: 7|Staffelfolgen: 39|Folge: 293||Quelle: DVB
+G 10
+X 2 03 deu 
+X 3 03 deu 
+F 25 720 576 i 16:9
+P 50
+L 99
+O 0
+@ <epgd><expression>Tom und Jerry</expression><autotimerinssp></autotimerinssp><doneid>155096</doneid><autotimerid>281</autotimerid><template></template><namingmode>1</namingmode><directory>Serien</directory><source>epgd</source><timerid>11010</timerid></epgd>
