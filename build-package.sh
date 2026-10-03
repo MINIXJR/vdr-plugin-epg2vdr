@@ -10,9 +10,11 @@
 #                 -1minixjr0~noble+local-N
 #
 # The 1minixjr0 revision keeps fork builds distinguishable from upstream
-# yavdr packages in dpkg -l and prevents accidental overwrites on yavdr
-# upgrades (yavdr would have to publish 1yavdr0 to override, which they
-# won't).
+# yavdr packages in dpkg -l. It does NOT protect against yavdr upgrades:
+# dpkg compares the upstream part (+git<date>-...) first, so any newer
+# yavdr snapshot replaces the fork build on "apt full-upgrade" (happened
+# 2026-09-12). Pin the installed fork build with
+#   sudo apt-mark hold vdr-plugin-epg2vdr
 set -e
 
 PROJECT_NAME="vdr-plugin-epg2vdr"
@@ -105,10 +107,10 @@ for PKG in "${PACKAGES[@]}"; do
     if [ -f "$DEB_FILE" ]; then
         SIZE=$(ls -lh "$DEB_FILE" | awk '{print $5}')
         echo "  [OK] $PKG ($SIZE)"
-        ((SUCCESS_COUNT++))
+        SUCCESS_COUNT=$((SUCCESS_COUNT + 1))
     else
         echo "  [FAIL] $PKG - not found"
-        ((FAIL_COUNT++))
+        FAIL_COUNT=$((FAIL_COUNT + 1))
     fi
 done
 
