@@ -1,3 +1,9 @@
+vdr-plugin-epg2vdr (1.2.19+git20261110-141-19c763b-1minixjr0~noble+local-1) noble; urgency=medium
+
+  * Rebase Bug-B fix onto upstream 1.2.19 (3da30ae)
+
+ -- VDR Builder <builder@localhost>  Tue, 10 Nov 2026 19:30:23 +0100
+
 vdr-plugin-epg2vdr (1.2.17+git20261003-135-6771ca2-1minixjr0~noble+local-1) noble; urgency=medium
 
   * Rebase Bug B fix (no eventid writeback) onto upstream 5040717
