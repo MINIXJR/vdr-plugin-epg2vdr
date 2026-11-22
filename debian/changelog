@@ -1,3 +1,11 @@
+vdr-plugin-epg2vdr (1.2.23+git20261122-148-b96c5e4-1minixjr0~noble+local-1) noble; urgency=medium
+
+  * Rebase onto upstream horchi 1.2.23; Bug B fix moved into the timer
+    table sync (timer.c): keep the database event of a timer on the same
+    channel regardless of start time difference
+
+ -- VDR Builder <builder@localhost>  Sun, 22 Nov 2026 17:10:08 +0100
+
 vdr-plugin-epg2vdr (1.2.19+git20261110-142-ff9fddd-1minixjr0~noble+local-1) noble; urgency=medium
 
   * Rebuild against yavdr VDR 2.8.4 (vdr-abi-2.8.4-0yavdr)
