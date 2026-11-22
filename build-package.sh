@@ -17,6 +17,23 @@
 #   sudo apt-mark hold vdr-plugin-epg2vdr
 set -e
 
+# After a successful build the script asks whether to add the new .deb files
+# to the own APT repository (vdr-tools, /srv/apt), from where the other
+# machines get them via "apt upgrade". The default answer is no, so a test
+# build never reaches the clients by accident. --publish answers yes without
+# asking (e.g. when run without a terminal, where it never asks).
+APT_PUBLISH="/usr/local/src/user/vdr-tools/apt-repo/publish.sh"
+PUBLISH=0
+case "${1:-}" in
+    --publish) PUBLISH=1 ;;
+    "") ;;
+    *) echo "Usage: $0 [--publish]" >&2; exit 2 ;;
+esac
+if [ "$PUBLISH" -eq 1 ] && [ ! -x "$APT_PUBLISH" ]; then
+    echo "ERROR: --publish needs $APT_PUBLISH" >&2
+    exit 1
+fi
+
 PROJECT_NAME="vdr-plugin-epg2vdr"
 SOURCE_DIR="/usr/local/src/user/vdr-plugin-epg2vdr"
 BUILD_BASE_DIR="/usr/local/src/user"
@@ -125,4 +142,22 @@ else
     echo ""
     echo "==> ERROR: Some packages failed to build"
     exit 1
+fi
+
+if [ "$PUBLISH" -eq 0 ] && [ -t 0 ] && [ -x "$APT_PUBLISH" ]; then
+    echo ""
+    read -r -p "Publish to the APT repository (suite $DISTRO)? [y/N] " ANSWER || ANSWER=""
+    case "$ANSWER" in
+        [yYjJ]*) PUBLISH=1 ;;
+        *) echo "==> Not published." ;;
+    esac
+fi
+
+if [ "$PUBLISH" -eq 1 ]; then
+    # Only this build's .deb files (the version is unique per build); the
+    # repository takes no .ddeb. Architecture-dependent packages go only into
+    # the suite they were built for.
+    echo ""
+    echo "==> Publishing to the APT repository (suite $DISTRO)"
+    "$APT_PUBLISH" -d "$DISTRO" "${BUILD_BASE_DIR}"/*_"${PACKAGE_VERSION}"_*.deb
 fi
