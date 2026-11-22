@@ -953,16 +953,26 @@ int cUpdate::updateTimerTable()
 
       timerDb->getRow()->copyValues(info.row, cDBS::ftAll);   // like updateRowByTimer() on the timer
 
-      // VDR may assign the timer to an other event with (nearly) the same start time on the same channel,
-      // e.g. one of the DVB EIT, keep the event of the database in this case - otherwise epgd don't find
-      // the event anymore, rejects the timer and the search timer creates it again and again
+      // VDR may assign the timer to an other event on the same channel, keep the event of the database
+      // in this case - otherwise epgd don't find the event anymore, rejects the timer and the search
+      // timer creates it again and again, or the search timer doesn't find its timer and creates a
+      // duplicate. VDR's cTimer::SetEventFromSchedule() picks the event with the largest overlap of
+      // the recording window (the longest one on a tie), this is not limited to (nearly) the same
+      // start time:
+      //   - a parallel event of an other source, e.g. one of the DVB EIT, same start time
+      //   - a longer neighbour event of the same source, e.g. a 15 minute episode inside the
+      //     recording window (incl. margins) of a 5 minute episode, start time 15 minutes apart
+      //   - no event at all (t->Event() is null -> EVENTID 0 and no EVTSTARTTIME from the timer)
+      // A changed start time of the event itself is requested by epgd (checkTimers, taAdjust), the
+      // adjust job stores the new EVTSTARTTIME. A changed channel (e.g. edited at the VDR)
+      // still takes the event of the VDR.
 
-      if (dbEventId > 0 && timerDb->getIntValue("EVENTID") != dbEventId
-          && dbChannelId == notNull(timerDb->getStrValue("CHANNELID"))
-          && std::abs(timerDb->getIntValue("EVTSTARTTIME") - dbEvtStart) <= 5 * tmeSecondsPerMinute)
+      if (dbEventId > 0 && dbChannelId == notNull(timerDb->getStrValue("CHANNELID")))
       {
-         tell(2, "Info: Timer (%d) assigned by VDR to event %ld, keeping event %ld of the database",
-              timerId, timerDb->getIntValue("EVENTID"), dbEventId);
+         if (timerDb->getIntValue("EVENTID") != dbEventId)
+            tell(2, "Info: Timer (%d) assigned by VDR to event %ld, keeping event %ld of the database",
+                 timerId, timerDb->getIntValue("EVENTID"), dbEventId);
+
          timerDb->setValue("EVENTID", dbEventId);
          timerDb->setValue("EVTSTARTTIME", dbEvtStart);
       }
