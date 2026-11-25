@@ -6,6 +6,7 @@
  */
 
 #include <vdr/tools.h>
+#include <vdr/menu.h>
 
 #include "update.h"
 #include "ttools.h"
@@ -225,8 +226,16 @@ int cUpdate::performRecordingActions()
 
                recording = new cRunningRecording(ti, doneid);
                recording->manual = autotimerid <= 0;
+
+               // remember the recording directory of this timer, the length check at the
+               //  end uses it (several recordings may stop at the same time)
+
+               if (cRecordControl* rc = cRecordControls::GetRecordControl(ti))
+                  recording->fileName = notNull(rc->FileName());
+
                runningRecordings.Add(recording);
-               tell(1, "Info: Recording '%s' with doneid %d added to running list", action.name.c_str(), doneid);
+               tell(1, "Info: Recording '%s' with doneid %d added to running list [%s]", action.name.c_str(), doneid,
+                    recording->fileName.c_str());
             }
          }
       }
@@ -239,7 +248,12 @@ int cUpdate::performRecordingActions()
 
          for (cRunningRecording* rr = runningRecordings.First(); rr;  rr = runningRecordings.Next(rr))
          {
-            const cRecording* pRecording = recordings->GetByName(action.fileName.c_str());
+            // VDR stops all ending recordings in one go, so the notifications of several
+            //  recordings are pending here at the same time -> measure each recording by
+            //  its own directory, not by the one of this notification (unknown: as before)
+
+            const char* recFileName = rr->fileName.empty() ? action.fileName.c_str() : rr->fileName.c_str();
+            const cRecording* pRecording = recordings->GetByName(recFileName);
             double recFraction {100.0};
             long timerLengthSecs {0};
             bool complete {false};
