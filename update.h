@@ -65,6 +65,7 @@ class cRunningRecording : public cListObject
       std::string aux;
       std::string info;
       std::string file;
+      std::string fileName; // recording directory, set at recording start
       time_t startTime {0};
       time_t stopTime {0};
       time_t recStart {0};  // time the recording actually started
