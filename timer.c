@@ -492,6 +492,11 @@ int cUpdate::performTimerJobs()
                   timer->SetStop(dummyTimer->Stop());
                   timer->SetDay(dummyTimer->Day());
                   delete dummyTimer;
+
+                  // take over the new start time of the event, updateTimerTable() keeps EVTSTARTTIME
+                  // of the database - otherwise epgd (checkTimers) detects the change again and again
+
+                  timerDb->setValue("EVTSTARTTIME", event->StartTime());
                }
 
                modifyCount++;
@@ -864,8 +869,9 @@ int cUpdate::updateTimerTable()
       //   - a longer neighbour event of the same source, e.g. a 15 minute episode inside the
       //     recording window (incl. margins) of a 5 minute episode, start time 15 minutes apart
       //   - no event at all (t->Event() is null -> EVENTID 0 and no EVTSTARTTIME from the timer)
-      // A changed start time of the event itself is adjusted by epgd (checkTimers), a changed
-      // channel (e.g. edited at the VDR) still takes the event of the VDR.
+      // A changed start time of the event itself is requested by epgd (checkTimers, taAdjust), the
+      // adjust job above stores the new EVTSTARTTIME. A changed channel (e.g. edited at the VDR)
+      // still takes the event of the VDR.
 
       if (dbEventId > 0 && dbChannelId == notNull(timerDb->getStrValue("CHANNELID")))
       {
