@@ -1,3 +1,10 @@
+vdr-plugin-epg2vdr (1.2.23+git20261127-154-e2d00ad-1minixjr0~noble+local-1) noble; urgency=medium
+
+  * Store the new event start time of an adjusted timer (stops repeated
+    'Starttime of event changed' messages)
+
+ -- VDR Builder <builder@localhost>  Fri, 27 Nov 2026 17:33:53 +0100
+
 vdr-plugin-epg2vdr (1.2.23+git20261125-152-d6165f5-1minixjr0~noble+local-1) noble; urgency=medium
 
   * Measure a finished recording against its own recording file
