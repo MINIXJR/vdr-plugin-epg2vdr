@@ -131,10 +131,14 @@ void cUpdate::Recording(const cDevice* Device, const char* Name, const char* Fil
    action.fileName = FileName;
    action.cardIndex = Device->CardIndex();
    action.on = On;
-   pendingRecordingActions.push(action);
 
-   if (On)
-      pendingNewRecordings.push(FileName);
+   {
+      cMutexLock lock(&pendingRecMutex);   // the queues are processed by our thread
+      pendingRecordingActions.push(action);
+
+      if (On)
+         pendingNewRecordings.push(FileName);
+   }
 
    recordingStateChangedTrigger = yes;
    waitCondition.Broadcast();            // wakeup
@@ -150,6 +154,18 @@ int cUpdate::performRecordingActions()
    const int allowedBreakDuration {2};
    const int lateStartTolerance {60};      // seconds
 
+   // take the pending actions, the queue is filled by the status interface in an other thread
+
+   std::queue<RecordingAction> actions;
+
+   {
+      cMutexLock lock(&pendingRecMutex);
+      std::swap(actions, pendingRecordingActions);
+   }
+
+   if (actions.empty())
+      return done;
+
    // read the configured limits before locking the VDR lists (no DB access while holding them)
 
    long minCompletePct {98};
@@ -163,12 +179,12 @@ int cUpdate::performRecordingActions()
    GET_TIMERS_READ(timers);           // get timers lock
    GET_RECORDINGS_READ(recordings);   // recordings lock
 
-   while (!pendingRecordingActions.empty())
+   while (!actions.empty())
    {
       cMutexLock lock(&runningRecMutex);
 
-      RecordingAction action = pendingRecordingActions.front();
-      pendingRecordingActions.pop();
+      RecordingAction action = actions.front();
+      actions.pop();
 
       if (action.on && action.name.length())    // recording started ...
       {

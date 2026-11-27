@@ -5,8 +5,8 @@
  *
  */
 
-#define _VERSION     "1.2.23"
-#define VERSION_DATE "21.11.2026"
+#define _VERSION     "1.2.24"
+#define VERSION_DATE "27.11.2026"
 
 #define DB_API 8
 
@@ -18,6 +18,10 @@
 
 /*
  * ------------------------------------
+
+2026-11-27: version 1.2.24 (horchi)
+   - bugfix: Possible crash on deleting the timer of a running recording
+   - bugfix: Possible crash on start or end of a recording
 
 2026-11-21: version 1.2.23 (horchi)
    - change: unused parameters of the old web interface removed

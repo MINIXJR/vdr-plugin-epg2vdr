@@ -202,7 +202,16 @@ int cUpdate::updatePendingRecordingInfoFiles()
    int count = 0;
    std::vector<std::pair<std::string,tEventID>> pending;   // path, event id
 
-   if (pendingNewRecordings.empty())
+   // take the pending recordings, the queue is filled by the status interface in an other thread
+
+   std::queue<std::string> newRecordings;
+
+   {
+      cMutexLock lock(&pendingRecMutex);
+      std::swap(newRecordings, pendingNewRecordings);
+   }
+
+   if (newRecordings.empty())
       return done;
 
    tell(1, "Updating recording info in info.epg2vdr");
@@ -217,12 +226,12 @@ int cUpdate::updatePendingRecordingInfoFiles()
       const cRecordings* recordings = &Recordings;
 #endif
 
-      while (!pendingNewRecordings.empty())
+      while (!newRecordings.empty())
       {
-         std::string path = pendingNewRecordings.front();
+         std::string path = newRecordings.front();
          const cRecording* rec = ((cRecordings*)recordings)->GetByName(path.c_str());
 
-         pendingNewRecordings.pop();
+         newRecordings.pop();
 
          if (!rec || !rec->Info() || !rec->Info()->GetEvent())
          {

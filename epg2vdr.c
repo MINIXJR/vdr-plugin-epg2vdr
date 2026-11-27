@@ -1150,6 +1150,9 @@ cString cPluginEPG2VDR::Active()
 void cPluginEPG2VDR::MainThreadHook()
 {
    cMenuEpgMatchRecordings::checkReturnPending();
+
+   if (oUpdate)
+      oUpdate->processRecordingStops();
 }
 
 //***************************************************************************

@@ -185,6 +185,96 @@ int cUpdate::hasTimerChanged()
 }
 
 //***************************************************************************
+// Stop Recording By Main Thread
+//   - the record controls of VDR (cRecordControls) are not thread safe, the main
+//     thread uses them without any lock (menus, skins, replay, ...)
+//     -> a running recording is stopped (and its timer deleted) only in VDRs
+//        main thread, see processRecordingStops() called by MainThreadHook()
+//   - waits until the main thread has done the job, the VDR locks must not be
+//     held by the caller!
+//***************************************************************************
+
+int cUpdate::stopRecordingByMainThread(int timerid)
+{
+   const int timeoutMs {5000};
+   cTimeMs timeout(timeoutMs);
+   cMutexLock lock(&recStopMutex);
+
+   tell(1, "Timer %d is recording, requesting stop of the recording and deletion of the timer", timerid);
+   pendingRecordingStops.push(timerid);
+
+   while (!pendingRecordingStops.empty())
+   {
+      if (timeout.TimedOut())
+      {
+         tell(0, "Warning: Main thread didn't stop the recording of timer %d within %d seconds, "
+              "it will be done later", timerid, timeoutMs / 1000);
+         return fail;
+      }
+
+      recStopCondition.TimedWait(recStopMutex, 100);
+   }
+
+   return success;
+}
+
+//***************************************************************************
+// Process Recording Stops
+//   - called by VDRs main thread (MainThreadHook)
+//   - don't block the main thread, if the timers are locked try it again
+//     on the next call
+//***************************************************************************
+
+void cUpdate::processRecordingStops()
+{
+   cMutexLock lock(&recStopMutex);
+
+   if (pendingRecordingStops.empty())
+      return;
+
+   {
+#if defined (APIVERSNUM) && (APIVERSNUM >= 20301)
+      cStateKey timersKey;
+      cTimers* timers = cTimers::GetTimersWrite(timersKey, 10/*ms*/);
+
+      if (!timers)
+         return;     // locked, retry on next call
+
+      timers->SetExplicitModify();
+#else
+      cTimers* timers = &Timers;
+#endif
+
+      while (!pendingRecordingStops.empty())
+      {
+         int timerid = pendingRecordingStops.front();
+         pendingRecordingStops.pop();
+
+         cTimer* timer = getTimerById(timers, timerid);
+
+         if (!timer)
+         {
+            tell(0, "Info: Timer (%d) not found, ignoring stop/delete request", timerid);
+            continue;
+         }
+
+         if (timer->Recording())
+            cRecordControls::Stop(timer);
+
+         timers->Del(timer);
+         timers->SetModified();
+         tell(0, "Deleted timer %d (recording stopped)", timerid);
+      }
+
+#if defined (APIVERSNUM) && (APIVERSNUM >= 20301)
+      timersKey.Remove();
+#endif
+   }
+
+   recStopCondition.Broadcast();
+}
+
+//***************************************************************************
 // Perform Timer Jobs
 //***************************************************************************
 
@@ -245,6 +335,7 @@ int cUpdate::performTimerJobs()
       tChannelID channelId = tChannelID::FromString(timerDb->getStrValue("CHANNELID"));
       char requetedAction = timerDb->getStrValue("ACTION")[0];
       int deleted = no;               // -> finish delete request after releasing the locks
+      int stopRecording = no;         // -> timer is recording, VDRs main thread stops it and deletes the timer
       int stored = no;                // -> finish create/modify request after releasing the locks
       int insert = no;
       std::string aux;
@@ -290,18 +381,15 @@ int cUpdate::performTimerJobs()
 
             // delete VDRs timer
 
-            if (timer)
+            if (timer && timer->Recording())
             {
-               if (timer->Recording())
-               {
-                  timer->Skip();
-#if defined (APIVERSNUM) && (APIVERSNUM >= 20302)
-                  cRecordControls::Process(timers, time(0));
-#else
-                  cRecordControls::Process(time(0));
-#endif
-               }
+               // the recording can't be stopped in our thread (cRecordControls isn't thread safe),
+               //  stop it and delete the timer in VDRs main thread after releasing the locks
 
+               stopRecording = yes;
+            }
+            else if (timer)
+            {
                timers->Del(timer);
                timers->SetModified();
                deleteCount++;
@@ -502,6 +590,12 @@ int cUpdate::performTimerJobs()
             stored = yes;
          }
       }  // release the VDR locks
+
+      if (stopRecording)
+      {
+         stopRecordingByMainThread(timerid);
+         deleteCount++;
+      }
 
       // finish the request at the database
 
