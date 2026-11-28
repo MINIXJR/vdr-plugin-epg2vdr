@@ -133,8 +133,18 @@ compare()
          exit changed > 0
       }' "$now" "$base" && rc=0 || rc=$?
 
+   # time of the snapshot from its name (snap-YYYYMMDD-HHMMSS.tsv) - the mtime
+   #   changes whenever git checks the file out again (branch switch, merge)
+
    local since
-   since=$(date -d "@$(stat -c %Y "$base")" '+%Y-%m-%d %H:%M:%S')
+   local stamp=$(basename "$base")
+
+   if [[ $stamp =~ ^snap-([0-9]{8})-([0-9]{2})([0-9]{2})([0-9]{2})\.tsv$ ]]; then
+      since=$(date -d "${BASH_REMATCH[1]} ${BASH_REMATCH[2]}:${BASH_REMATCH[3]}:${BASH_REMATCH[4]}" '+%Y-%m-%d %H:%M:%S')
+   else
+      since=$(date -d "@$(stat -c %Y "$base")" '+%Y-%m-%d %H:%M:%S')
+      echo "    (no snapshot time in the file name, using its modification time)"
+   fi
    echo "==> journal vdrserver since $since: log line of the fix"
    journalctl -u vdr --since "$since" --no-pager 2>/dev/null \
       | grep -E 'keeping event .* of the database' | cut -c1-220 || echo "    (none)"
