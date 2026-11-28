@@ -100,9 +100,11 @@ compare()
    local base=${1:-$(ls "$DIR"/snap-*.tsv 2>/dev/null | head -1)}
    [ -n "$base" ] && [ -s "$base" ] || { echo "ERROR: no snapshot, run '$0 snapshot' first" >&2; exit 1; }
 
-   local now
+   # global, not local: the EXIT trap runs after compare() has returned,
+   #   when a local variable no longer exists (set -u aborts on it)
+
    now=$(mktemp "$DIR/.now.XXXXXX")
-   trap 'rm -f "$now"' RETURN EXIT
+   trap 'rm -f "$now"' EXIT
 
    sql -N -e "SELECT t.id, t.eventid, t.state, ifnull(v.name, t.vdruuid)
                 FROM timers t LEFT JOIN vdrs v ON v.uuid = t.vdruuid ORDER BY t.id" > "$now"
