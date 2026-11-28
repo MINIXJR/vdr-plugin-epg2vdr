@@ -1,3 +1,10 @@
+vdr-plugin-epg2vdr (1.2.24+git20261128-157-d0dbf3c-1minixjr0~noble+local-1) noble; urgency=medium
+
+  * Merge upstream 1.2.24 (crash fixes on deleting the timer of a
+    running recording and on recording start/end)
+
+ -- VDR Builder <builder@localhost>  Sat, 28 Nov 2026 10:07:30 +0100
+
 vdr-plugin-epg2vdr (1.2.23+git20261127-154-e2d00ad-1minixjr0~noble+local-1) noble; urgency=medium
 
   * Store the new event start time of an adjusted timer (stops repeated
