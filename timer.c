@@ -580,6 +580,11 @@ int cUpdate::performTimerJobs()
                   timer->SetStop(dummyTimer->Stop());
                   timer->SetDay(dummyTimer->Day());
                   delete dummyTimer;
+
+                  // take over the new start time of the event, updateTimerTable() may keep EVTSTARTTIME
+                  // of the database - otherwise epgd (checkTimers) detects the change again and again
+
+                  timerDb->setValue("EVTSTARTTIME", event->StartTime());
                }
 
                modifyCount++;
