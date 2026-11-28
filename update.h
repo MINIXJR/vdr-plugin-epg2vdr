@@ -146,6 +146,7 @@ class cUpdate : public cThread, public cStatus, public cParameters
       int triggerStoreInfoFiles();
       void triggerTimerJobs();
       void epgdStateChange(const char* state);
+      void processRecordingStops();     // called by VDRs main thread (MainThreadHook)
 
    protected:
 
@@ -320,8 +321,19 @@ class cUpdate : public cThread, public cStatus, public cParameters
       cDbValue* viewMergeSource {};
       cDbValue* viewLongDescription {};
 
+      // filled by the status interface (VDRs main thread), processed by our thread -> pendingRecMutex
+
       std::queue<std::string> pendingNewRecordings;        // recordings to store details (obsolete if pendingRecordingActions implemented finally)
       std::queue<RecordingAction> pendingRecordingActions; // recordings actions (start/stop)
+      cMutex pendingRecMutex;
+
+      // timers with a running recording to delete, done by VDRs main thread
+      //  (cRecordControls isn't thread safe, see processRecordingStops())
+
+      std::queue<int> pendingRecordingStops;               // timer ids
+      cMutex recStopMutex;
+      cCondVar recStopCondition;
+      int stopRecordingByMainThread(int timerid);
       std::map<long,SwitchTimer> switchTimers;
       std::queue<int> eventHook;
       cMutex eventHookMutex;
